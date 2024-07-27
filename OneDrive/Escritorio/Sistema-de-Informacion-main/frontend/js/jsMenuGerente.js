@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Manejar clic en el botón de eliminación
   teamMembers.onclick = function(event) {
     if (event.target.classList.contains('delete-btn')) {
+      event.target.classList.add('btn-curvo'); // Agregar la clase btn-curvo
       const index = event.target.getAttribute('data-index');
       employees.splice(index, 1); // Eliminar el empleado de la lista
       localStorage.setItem('employees', JSON.stringify(employees)); // Actualizar Local Storage

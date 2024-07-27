@@ -60,7 +60,6 @@ nav ul li{
     padding: 9px 0;
 }
 
-
 /* Dropdown Styling */
 .dropdown-content {
     display: none;
@@ -258,3 +257,16 @@ footer {
 .social-media a {
     color: #fff;
 }
+
+.btn-curvo {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px; /* Esto hace que el botón sea curvo */
+    cursor: pointer;
+  }
+  
+  .btn-curvo:hover {
+    background-color: #3e8e41;
+  }

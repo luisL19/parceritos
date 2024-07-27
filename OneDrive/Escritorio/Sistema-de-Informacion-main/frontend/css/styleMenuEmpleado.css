@@ -19,7 +19,6 @@ header {
     padding: 0 15px;
 }
 
-
 h1, h2, h3 {
     text-align: center;
     margin-bottom: 10px;
@@ -30,8 +29,7 @@ nav ul {
     margin: 0;
     padding: 0 20px;
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: flex-end;    
 }
 
 nav li {
@@ -51,7 +49,7 @@ nav ul li {
 }
 
 nav img {
-    margin-right: 813px;
+    margin-right: 690px;
     height: 45px; 
     border-radius: 6px;
 }
@@ -59,6 +57,7 @@ nav img {
 nav ul li{
     padding: 9px 0;
 }
+
 .nav-links {
     list-style: none;
     margin: 0;

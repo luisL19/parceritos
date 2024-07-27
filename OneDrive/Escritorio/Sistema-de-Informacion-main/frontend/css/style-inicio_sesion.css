@@ -110,7 +110,8 @@ input[type="password"] {
     text-decoration: none;
 }
 
-button {
+.button {
+    text-align: center;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -120,6 +121,7 @@ button {
     cursor: pointer;
     width: 40%;
     align-self: center;
+    text-decoration: none;
 }
 
 button:hover {
