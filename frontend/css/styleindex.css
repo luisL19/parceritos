@@ -50,9 +50,10 @@ nav ul li {
 }
 
 nav img {
-    margin-right: 690px;
-    height: 45px; 
-    border-radius: 6px;
+    width: 80px;
+    height: auto;
+    margin-top: -20px;
+    margin-right: 910px;
 }
 
 nav ul li{
@@ -171,7 +172,7 @@ nav ul li{
 
 
 footer {
-    background-color: #e2e1e1b4;
+    background-color: #3a3a3ae1;
     color: #000000;
     padding: 30px 30px;
     text-align: center;
