@@ -9,25 +9,40 @@
 </head>
 <body>
     <header>
-        <div class="container">
-          <nav id="nav">
-                  <ul>
-                      <img src="../img/logo.png" alt="Logo">
-                      <li><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Mascotas
-                      </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../Gestion_Clientes/RegistroMascota.html">Registrar</a></li>
-                          <li><a class="dropdown-item" href="#">Mis Mascotas</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="">Quejas</a></li>
-                      <li><a href="">Reservas</a></li>
-                      <li><a href="../Gestion_Clientes/Perfil.html">Perfil</a></li>
-                  </ul>
-          </nav>
-      </div>
-      </header>
+        <div class="logo">
+            <a href="../Menus/Cliente.html">
+                <img src="../img/logo.png" alt="Logo Parceritos Fieles">
+            </a>
+        </div>
+        <nav>
+            <div class="nav">
+                <div class="dropdown">
+                    <a href="#">Mascotas</a>
+                    <div class="dropdown-content">
+                        <a href="../Gestion_Clientes/RegistroMascota.html">Registrar</a>
+                        <a href="../Gestion_Mascotas/PerfilMascota.html">Consultar</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Reservas</a>
+                    <div class="dropdown-content">
+                        <a href="../Gestion_Reserva/crear.html">Registrar</a>
+                        <a href="../Gestion_Reserva/consultar.html">Consultar</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Quejas</a>
+                    <div class="dropdown-content">
+                        <a href="#">Registrar</a>
+                        <a href="#">Consultar</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../Gestion_Clientes/Perfil.html">Perfil</a>
+                </div>
+            </div>
+        </nav>
+    </header>
       <div class="container-2">
         <center>
         <div class="user-img">
