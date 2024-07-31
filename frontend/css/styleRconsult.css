@@ -19,7 +19,11 @@ header {
 .logo img {
     width: 50px;
     height: auto;
+<<<<<<< HEAD
     margin-top: 2px;/* Mantiene la proporción del logo */
+=======
+    margin-top: 10px;
+>>>>>>> 7000051b5d03c212caf79616603e1c29f784dc94
 }
 
 .nav {
