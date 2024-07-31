@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reservas</title>
-<link rel="stylesheet" href="../css/styleRconsult.css">
+<link rel="stylesheet" href="../css/styleConsultarMascota.css">
 </head>
 <body>
     <header>
@@ -17,7 +19,7 @@
                     <a href="#">Mascotas</a>
                     <div class="dropdown-content">
                         <a href="../Gestion_Clientes/RegistroMascota.html">Registrar</a>
-                        <a href="../Gestion_Mascotas/PerfilMascota.html">Consultar</a>
+                        <a href="../Gestion_Mascotas/ConsultarMascotas.html">Consultar</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -43,18 +45,16 @@
     <main>
         <div class="container">
             <div class="content">
-                <h2>Reservas</h2>
-                <p>Estas son las últimas reservas que has hecho</p>
+                <h2>Mascotas</h2>
+                <p>Estos son los ultimos registros de mascotas en el sistema</p>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr>
-                                <th>Fecha</th>
-                                <th>Hora de inicio</th>
-                                <th>Hora de final</th>
-                                <th>Celular</th>
-                                <th>Correo</th>
-                                <th>Mascota</th>
+                                <th>Nombre</th>
+                                <th>Raza</th>
+                                <th>Nombre del Dueño</th>
+                                <th>Nombre del Cuidador</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -82,12 +82,10 @@
                 const row = document.createElement('tr');
 
                 row.innerHTML = `
-                    <td>${reserva.fecha}</td>
-                    <td>${reserva.horaInicio}</td>
-                    <td>${reserva.horaFinal}</td>
-                    <td>${reserva.celular}</td>
-                    <td>${reserva.correo}</td>
-                    <td>${reserva.mascota}</td>
+                    <td>${reserva.Nombre}</td>
+                    <td>${reserva.Raza}</td>
+                    <td>${reserva.NombredelDueño}</td>
+                    <td>${reserva.NombredelCuidador}</td>
                     <td><button onclick="cancelarReserva(${index})">Cancelar</button></td>
                 `;
 
