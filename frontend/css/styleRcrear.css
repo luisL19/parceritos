@@ -15,9 +15,9 @@ header {
 }
 
 .logo img {
-    width: 80px;
+    width: 50px;
     height: auto;
-    margin-top: -10px;
+    margin-top: 2px;
 }
 
 .nav {

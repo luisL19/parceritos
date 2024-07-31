@@ -1,10 +1,8 @@
 body {
-    margin: 0;
     font-family: sans-serif;
-    background-image: url("../img/imagen_de_fondo.jpeg");
-    background-size: cover;
-    background-position: center;
-    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
 header {
@@ -16,10 +14,14 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
+header .logo img {
     width: 50px;
     height: auto;
-    margin-top: 2px;/* Mantiene la proporción del logo */
+    margin-top: 2px;
+}
+
+nav {
+    width: 100%;
 }
 
 .nav {
@@ -27,7 +29,6 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
     justify-content: flex-end;
     margin-right: 70px;
     font-size: large;
@@ -71,67 +72,68 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+    background: url('../img/imagen_de_fondo.jpeg') no-repeat center center/cover;
+    padding: 20px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 80px); /* Header + Footer height */
+    align-items: center;
+    width: 100%;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(183 183 183 / 75%);
+    background-color: rgba(255, 255, 255, 0.79);
+    padding: 30px;
     border-radius: 10px;
-}
-
-.content h2 {
-    margin-bottom: 20px;
-    font-size: xx-large;
-    color: black;
-}
-
-.table-container {
-    background-color: rgba(225, 215, 215, 0.8);
-    padding: 20px;
-    border-radius: 5px;
-    width: 95%;
-    max-width: 800px;
-    overflow-x: auto;
-}
-
-table {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    color: black;
+    max-width: 1200px;
+    text-align: center;
 }
 
-th, td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+.content .logo {
+    margin-bottom: 20px;
 }
 
-th {
-    background-color: #bfbcbcbf;
-    font-weight: bold;
+.content .logo img {
+    width: 100px;
+    height: auto;
 }
 
-button {
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.actualizar-form {
+    text-align: center;
+}
+
+.guardar-btn {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-button:hover {
-    background-color: #3e8e41;
+.guardar-btn:hover {
+    background-color: #45a049;
 }
 
 footer {
