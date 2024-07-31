@@ -14,14 +14,14 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
+header .logo img {
     width: 50px;
     height: auto;
-<<<<<<< HEAD
     margin-top: 2px;
-=======
-    margin-top: 10px;
->>>>>>> 7000051b5d03c212caf79616603e1c29f784dc94
+}
+
+nav {
+    width: 100%;
 }
 
 .nav {
@@ -29,7 +29,6 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
     justify-content: flex-end;
     margin-right: 70px;
     font-size: large;
@@ -84,17 +83,29 @@ main {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.form-container {
+.content {
     background-color: rgba(255, 255, 255, 0.79);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.content .logo {
+    margin-bottom: 20px;
+}
+
+.content .logo img {
+    width: 100px;
+    height: auto;
 }
 
 h2 {
@@ -102,38 +113,26 @@ h2 {
     margin-bottom: 20px;
 }
 
-.form-group {
+p {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+.actualizar-form {
+    text-align: center;
 }
 
-input[type="date"],
-input[type="tel"],
-input[type="email"],
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-button {
+.guardar-btn {
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-button:hover {
+.guardar-btn:hover {
     background-color: #45a049;
 }
 

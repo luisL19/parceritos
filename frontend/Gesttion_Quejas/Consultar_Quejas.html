@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Quejas</title>
+    <link rel="stylesheet" href="../css/styleConsultarQ.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo Parceritos Fieles">
+        </div>
+        <nav>
+            <div class="nav">
+                <div class="dropdown">
+                    <a href="#">Mascotas</a>
+                    <div class="dropdown-content">
+                        <a href="#">Registrar</a>
+                        <a href="#">Consultar</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Reservas</a>
+                    <div class="dropdown-content">
+                        <a href="#">Registrar</a>
+                        <a href="#">Consultar</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Quejas</a>
+                    <div class="dropdown-content">
+                        <a href="#">Registrar</a>
+                        <a href="#">Actualizar</a>
+                        <a href="#">Consultar</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#">Perfil</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <h2>Quejas</h2>
+                <p>Estas son las últimas quejas registradas en el sistema</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Celular</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>29/06/2024</td>
+                                <td>////</td>
+                                <td>Miguel</td>
+                                <td>ejemplo1@gmail.com</td>
+                                <td>323432345</td>
+                                <td><button class="ver-btn" onclick="toggleQueja(this)">Ver</button></td>
+                            </tr>
+                            <tr class="queja-row" style="display:none;">
+                                <td colspan="6">
+                                    <div class="queja-content">
+                                        <p>Esta es la queja de ejemplo para Miguel. El servicio no fue satisfactorio y hubo problemas con la atención al cliente.</p>
+                                        <button class="actualizar-btn" onclick="location.href='actualizarQueja.html'">Actualizar</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Más filas pueden ser añadidas aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Parceritos Fieles</p>
+        <ul class="social-media">
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+    </footer>
+    <script>
+        function toggleQueja(button) {
+            const quejaRow = button.closest('tr').nextElementSibling;
+            quejaRow.style.display = quejaRow.style.display === 'none' ? 'table-row' : 'none';
+        }
+    </script>
+</body>
+</html>
