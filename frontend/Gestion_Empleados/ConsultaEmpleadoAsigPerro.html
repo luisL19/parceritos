@@ -7,19 +7,34 @@
     <link rel="stylesheet" href="../css/styleConsultaEmpleado.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-          <nav id="nav">
-                  <ul>
-                      <img src="../img/logo.png" alt="Logo">
-                      <li><a href="">Usuario</a></li>
-                      <li><a href="">Quejas</a></li>
-                      <li><a href="">Reservas</a></li>
-                      <li><a href="">Perfil</a></li>
-                  </ul>
-          </nav>
-      </div>
-      </header>
+    <nav>
+        <div class="nav">
+            <div class="dropdown">
+                <a href="#">Mascotas</a>
+                <div class="dropdown-content">
+                    <a href="../Gestion_Clientes/RegistroMascota.html">Registrar</a>
+                    <a href="../Gestion_Mascotas/PerfilMascota.html">Consultar</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Reservas</a>
+                <div class="dropdown-content">
+                    <a href="../Gestion_Reserva/crear.html">Registrar</a>
+                    <a href="../Gestion_Reserva/consultar.html">Consultar</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Quejas</a>
+                <div class="dropdown-content">
+                    <a href="../Gesttion_Quejas/Crear_queja.html">Registrar</a>
+                    <a href="../Gesttion_Quejas/Consultar_Quejas.html">Consultar</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="../Gestion_Clientes/Perfil.html">Perfil</a>
+            </div>
+        </div>
+    </nav>
     <div class="container-2">
         <div class="text">
             <h1>Perfil del Empleado encargado del Perro</h1>

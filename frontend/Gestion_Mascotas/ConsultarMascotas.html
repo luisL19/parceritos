@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reservas</title>
-<link rel="stylesheet" href="../css/styleConsultarMascota.css">
+    <title>Consultar Mascotas</title>
+    <link rel="stylesheet" href="../css/styleConsultarMascota.css">
 </head>
 <body>
     <header>
@@ -32,8 +32,8 @@
                 <div class="dropdown">
                     <a href="#">Quejas</a>
                     <div class="dropdown-content">
-                        <a href="#">Registrar</a>
-                        <a href="#">Consultar</a>
+                        <a href="../Gesttion_Quejas/Crear_queja.html">Registrar</a>
+                        <a href="../Gesttion_Quejas/Consultar_Quejas.html">Consultar</a>
                     </div>
                 </div>
                 <div class="nav-item">
@@ -43,62 +43,45 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+        <section class="container">
             <div class="content">
-                <h2>Mascotas</h2>
-                <p>Estos son los ultimos registros de mascotas en el sistema</p>
+                <h2>Consultar Mascotas</h2>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr>
                                 <th>Nombre</th>
                                 <th>Raza</th>
-                                <th>Nombre del Dueño</th>
-                                <th>Nombre del Cuidador</th>
-                                <th></th>
+                                <th>Edad</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
-                        <tbody id="reservasTableBody">
-                            <!-- Las reservas se cargarán aquí dinámicamente -->
+                        <tbody>
+                            <tr>
+                                <td>Rocky</td>
+                                <td>Criollo</td>
+                                <td>2 años</td>
+                                <td><button onclick="location.href='../Gestion_Mascotas/PerfilMascota.html'">Perfil</button></td>
+                            </tr>
+                            <tr>
+                                <td>Max</td>
+                                <td>Bulldog</td>
+                                <td>3 años</td>
+                                <td><button onclick="location.href='../Gestion_Mascotas/PerfilMascota.html'">Perfil</button></td>
+                            </tr>
+                            <!-- Más registros aquí -->
                         </tbody>
                     </table>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Parceritos Fieles</p>
         <ul class="social-media">
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
         </ul>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const reservas = JSON.parse(localStorage.getItem('reservas')) || [];
-            const reservasTableBody = document.getElementById('reservasTableBody');
-
-            reservas.forEach((reserva, index) => {
-                const row = document.createElement('tr');
-
-                row.innerHTML = `
-                    <td>${reserva.Nombre}</td>
-                    <td>${reserva.Raza}</td>
-                    <td>${reserva.NombredelDueño}</td>
-                    <td>${reserva.NombredelCuidador}</td>
-                    <td><button onclick="cancelarReserva(${index})">Cancelar</button></td>
-                `;
-
-                reservasTableBody.appendChild(row);
-            });
-        });
-
-        function cancelarReserva(index) {
-            let reservas = JSON.parse(localStorage.getItem('reservas')) || [];
-            reservas.splice(index, 1);
-            localStorage.setItem('reservas', JSON.stringify(reservas));
-            window.location.reload();
-        }
-    </script>
 </body>
 </html>

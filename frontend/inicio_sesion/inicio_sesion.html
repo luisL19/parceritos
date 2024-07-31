@@ -21,15 +21,15 @@
                     <p>Comuníquese con nosotros en:</p>
                     <div class="icons">
                         <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/guarderia_parceritos_fieles?igsh=eXBxaTIxbGg2NXpi"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61555383941250"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@parceritosfieles?_t=8oLcvrq6wh3&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/guarderia_parceritos_fieles?igsh=eXBxaTIxbGg2NXpi"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61555383941250"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@parceritosfieles?_t=8oLcvrq6wh3&_r=1"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="right-section">
-            <form>
+            <form id="loginForm">
                 <div class="form-group">
                     <label for="email">Correo</label>
                     <input type="email" id="email" name="email" placeholder="Tu correo" required>
@@ -42,11 +42,30 @@
                     <a href="#">¿Olvidaste tu Contraseña?</a>
                     <a href="registrar.html">¿No tienes cuenta? Regístrate!</a>
                 </div>
-                <a href="../Menus/Cliente.html" class="button">Ingresar</a>
+                <button type="submit" class="button">Ingresar</button>
             </form>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/5272fcc4c6.js" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
 
+            // Usuario de ejemplo
+            const user = {
+                email: 'usuario@example.com',
+                password: 'password123'
+            };
+
+            if (email === user.email && password === user.password) {
+                alert('Inicio de sesión exitoso');
+                window.location.href = '../Menus/Cliente.html';
+            } else {
+                alert('Correo o contraseña incorrectos');
+            }
+        });
+    </script>
 </body>
 </html>

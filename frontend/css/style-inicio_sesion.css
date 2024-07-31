@@ -124,12 +124,12 @@ input[type="password"] {
     text-decoration: none;
 }
 
-button:hover {
+.button:hover {
     background-color: #45a049;
 }
 
-.icons a i{
+.icons a i {
     color: #333;
     margin: 4px 12px;
-    font-size:1.8em;
+    font-size: 1.8em;
 }

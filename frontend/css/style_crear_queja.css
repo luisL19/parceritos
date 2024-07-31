@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ccc; /* Imagen de fondo */
+    font-family: sans-serif;
+    background-image: url("../img/fondohuellas.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: repeat;
 }
 header {
     display: flex;
@@ -15,9 +16,9 @@ header {
 }
 
 .logo img {
-    width: 80px; /* Ajusta el tamaño del logo aquí */
+    width: 50px;
     height: auto;
-    margin-top: -10px; /* Mantiene la proporción del logo */
+    margin-top: 10px;
 }
 
 .nav {

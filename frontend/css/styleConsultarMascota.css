@@ -1,10 +1,10 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: url("../img/imagen_de_fondo.jpeg");
+    background-image: url("../img/fondohuellas.jpg");
     background-size: cover;
     background-position: center;
-    color: white;
+    background-repeat: repeat;
 }
 
 header {

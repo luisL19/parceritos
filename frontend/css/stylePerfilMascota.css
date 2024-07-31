@@ -1,84 +1,74 @@
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background-image: url("../img/fondohuellas.png");
-    background-color: rgba(255, 255, 255, 0.411);
-    background-blend-mode: multiply;
+    font-family: sans-serif;
+    background-image: url("../img/fondohuellas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 header {
-    background-color: #fff;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 5px;
-    margin-right: 20px;
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
 }
 
-
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0 20px;
+.nav {
     display: flex;
-    justify-content: flex-end;
-    
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 20px 0;
-}
-
-nav ul li {
-    text-align: right;
-    margin-right: 50px;
-}
-
-nav img {
-    margin-right: 600px;
-    height: 45px; 
-    border-radius: 6px;
-}
-
-nav ul li{
-    padding: 9px 0;
-}
-
-.nav-links {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 40px;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 70px;
+    font-size: large;
 }
 
-.nav-links li {
-    margin: 0;
-    position: relative; /* Añadir para posicionamiento del dropdown */
+.nav .dropdown, .nav .nav-item {
+    margin-left: 20px;
+    position: relative;
 }
 
-.nav-links a {
+.nav a {
     text-decoration: none;
-    color: #333;
-    margin-right: 50px;
+    color: black;
+    padding: 15px 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .container-2 {

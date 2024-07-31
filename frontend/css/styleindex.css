@@ -52,8 +52,9 @@ nav ul li {
 nav img {
     width: 80px;
     height: auto;
-    margin-top: -20px;
-    margin-right: 910px;
+    margin-top: -17px;
+    margin-right: 850px;
+    border-radius: 15px;
 }
 
 nav ul li{
