@@ -1,0 +1,30 @@
+/* src/gerente/style_perfil_gerente.css */
+
+.perfil-gerente {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.gerente-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.opciones-gerente {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #550653;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #440652;
+}
