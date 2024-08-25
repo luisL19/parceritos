@@ -1,0 +1,18 @@
+{
+  "Usuarios": [
+    {
+      "id": "1724617958266",
+      "Nombre": "Daniel",
+      "Apellido": "Zuñiga",
+      "Correo": "dzuniga873@gmail.com",
+      "Celular": "3166617088",
+      "Direccion": "Calle 158 #96 a - 77",
+      "TipoDocumento": "CC",
+      "NumeroDocumento": "1127615970",
+      "Contraseña": "DanielZ0905",
+      "Rol": "Cliente"
+    }
+  ],
+  "Reservas": [],
+  "Mascotas": []
+}
