@@ -10,9 +10,10 @@
       "TipoDocumento": "CC",
       "NumeroDocumento": "1127615970",
       "Contraseña": "DanielZ0905",
-      "Rol": "Cliente"
+      "Rol": "Empleado"
     }
   ],
+<<<<<<< HEAD
   "Reservas": [],
   "Mascotas": [
     {
@@ -46,4 +47,31 @@
       "esterilizado": "no"
     }
   ]
+=======
+  "Reservas": [
+    {
+      "id": "1724617958266",
+      "Fecha": "2024-08-25",
+      "HoraInicio": "09:00",
+      "HoraFinal": "10:00",
+      "Celular": "123456789",
+      "Correo": "cliente@example.com",
+      "Mascota": "Bella",
+      "Estado": "Confirmada"
+    }
+  ],
+  "Mascotas": [
+    {
+      "id": "1724617958267",
+      "Nombre": "Bella",
+      "Raza": "Pitbull",
+      "Edad": "2",
+      "Sexo": "Hembra",
+      "Peso": "20kg",
+      "Enfermedades": "Ninguna",
+      "Esterilizado": "No"
+    }
+  ],
+  "Quejas": []
+>>>>>>> 9aebd031ce242f3eccc3fa901e3c96697e0e2270
 }
