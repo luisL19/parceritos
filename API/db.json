@@ -14,5 +14,36 @@
     }
   ],
   "Reservas": [],
-  "Mascotas": []
+  "Mascotas": [
+    {
+      "id": "5a96",
+      "nombre": "pan",
+      "raza": "mestizo",
+      "enfermedades": "no tiene",
+      "peso": "23 kg",
+      "edad": "1",
+      "sexo": "masculino",
+      "esterilizado": "si"
+    },
+    {
+      "id": "4998",
+      "nombre": "pan",
+      "raza": "mestizo",
+      "enfermedades": "no tiene",
+      "peso": "23 kg",
+      "edad": "1",
+      "sexo": "masculino",
+      "esterilizado": "si"
+    },
+    {
+      "id": "e836",
+      "nombre": "miguel",
+      "raza": "dormilon",
+      "enfermedades": "adicto a las empanadas",
+      "peso": "10 kg",
+      "edad": "13",
+      "sexo": "femenino",
+      "esterilizado": "no"
+    }
+  ]
 }
