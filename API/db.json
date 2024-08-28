@@ -11,10 +11,20 @@
       "NumeroDocumento": "1127615970",
       "Contraseña": "DanielZ0905",
       "Rol": "Empleado"
+    },
+    {
+      "id": "1724787393052",
+      "Nombre": "Luis",
+      "Apellido": "Alejandro",
+      "Correo": "lugobecerra9@gmail.com",
+      "Celular": "3115958041",
+      "Direccion": "cra 104 #140-31",
+      "TipoDocumento": "CC",
+      "NumeroDocumento": "1025524584",
+      "Contraseña": "lugo1234",
+      "Rol": "Cliente"
     }
   ],
-<<<<<<< HEAD
-  "Reservas": [],
   "Mascotas": [
     {
       "id": "5a96",
@@ -45,22 +55,7 @@
       "edad": "13",
       "sexo": "femenino",
       "esterilizado": "no"
-    }
-  ]
-=======
-  "Reservas": [
-    {
-      "id": "1724617958266",
-      "Fecha": "2024-08-25",
-      "HoraInicio": "09:00",
-      "HoraFinal": "10:00",
-      "Celular": "123456789",
-      "Correo": "cliente@example.com",
-      "Mascota": "Bella",
-      "Estado": "Confirmada"
-    }
-  ],
-  "Mascotas": [
+    },
     {
       "id": "1724617958267",
       "Nombre": "Bella",
@@ -72,6 +67,64 @@
       "Esterilizado": "No"
     }
   ],
-  "Quejas": []
->>>>>>> 9aebd031ce242f3eccc3fa901e3c96697e0e2270
+  "Reservas": [
+    {
+      "id": "1724617958266",
+      "Fecha": "2024-08-25",
+      "HoraInicio": "09:00",
+      "HoraFinal": "10:00",
+      "Celular": "123456789",
+      "Correo": "cliente@example.com",
+      "Mascota": "Bella",
+      "Estado": "Confirmada"
+    },
+    {
+      "id": "d8d9",
+      "fechaInicio": "2024-08-06",
+      "fechaFinal": "2024-08-15",
+      "mascota": "miguel",
+      "celular": "3115958041",
+      "correo": "lugobecerra9@gmail.com",
+      "usuarioId": "1724787393052"
+    },
+    {
+      "id": "b8d3",
+      "fechaInicio": "2024-08-13",
+      "fechaFinal": "2024-08-07",
+      "mascota": "pan",
+      "celular": "3115958041",
+      "correo": "lugobecerra9@gmail.com",
+      "usuarioId": "1724787393052"
+    }
+  ],
+  "Quejas": [
+    {
+      "id": "af9d",
+      "texto": "hola mundo",
+      "usuarioId": "1724787393052",
+      "fecha": "2024-08-27",
+      "hora": "17:42:51"
+    },
+    {
+      "id": "6b23",
+      "texto": "hola otra vez",
+      "usuarioId": "1724787393052",
+      "fecha": "2024-08-27",
+      "hora": "17:43:15"
+    },
+    {
+      "id": "7361",
+      "texto": "ultima",
+      "usuarioId": "1724787393052",
+      "fecha": "2024-08-27",
+      "hora": "17:48:39"
+    },
+    {
+      "id": "c1d0",
+      "texto": "Miguel hace mucho ruido y se demora mucho para llegar al portal y no trabaja rapido",
+      "usuarioId": "1724787393052",
+      "fecha": "2024-08-28",
+      "hora": "20:41:49"
+    }
+  ]
 }

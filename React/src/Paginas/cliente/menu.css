@@ -162,3 +162,16 @@ body {
     background-color: #128C7E; /* Color verde más oscuro al pasar el mouse */
   }
   
+  .upload-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upload-section input[type="file"] {
+    margin-bottom: 1rem;
+  }
+  

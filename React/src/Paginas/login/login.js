@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
-import './login.css';
+import './login.css'; // Asegúrate de que este archivo esté en la misma carpeta que el componente o ajusta la ruta.
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
+import NavIndex from "../../components/navIndex";
+import Footer from "../../components/footer";
 
 const Login = () => {
     const [Correo, setCorreo] = useState('');
@@ -13,30 +19,25 @@ const Login = () => {
 
         try {
             const respuesta = await axios.get('http://localhost:3002/Usuarios/');
-            const usuarios = respuesta.data; // Accede a la propiedad correcta
+            const usuarios = respuesta.data;
 
-            // Verificar si el usuario existe y si la contraseña es correcta
             const usuario = usuarios.find(
                 user => user.Correo === Correo && user.Contraseña === Contraseña
             );
 
             if (usuario) {
                 alert('Inicio de sesión exitoso');
-
-                // Guardar el ID del usuario en localStorage
                 localStorage.setItem('usuarioId', usuario.id);
-                console.log('ID del usuario guardado en localStorage:', usuario.id);
 
-                // Redirigir basado en el rol del usuario
                 switch (usuario.Rol) {
                     case 'Cliente':
-                        navigate('/menu'); // Cambia esto a la ruta correcta para el Cliente
+                        navigate('/menu');
                         break;
                     case 'Empleado':
-                        navigate('/menuEmpleado'); // Cambia esto a la ruta correcta para el Empleado
+                        navigate('/menuEmpleado');
                         break;
                     case 'Gerente':
-                        navigate('/gerente'); // Cambia esto a la ruta correcta para el Gerente
+                        navigate('/gerente');
                         break;
                     default:
                         alert('Rol desconocido');
@@ -52,43 +53,50 @@ const Login = () => {
     };
 
     return (
-        <div className="container">
-            <div className="left-section">
-                <h1>Inicia Sesión</h1>
-            </div>
-            <div className="right-section">
-                <form id="loginForm" onSubmit={manejarInicioSesion}>
-                    <div className="form-group">
-                        <label htmlFor="email">Correo</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Tu correo"
-                            value={Correo}
-                            onChange={(e) => setCorreo(e.target.value)}
-                            required
-                        />
+        <div className="login-page-container">
+            <NavIndex /> {/* Menú de navegación */}
+            <main className="login-content">
+                <div className="login-container">
+                    <div className="login-right-section">
+                        <h1>Inicia Sesión</h1>
+                        <form id="loginForm" onSubmit={manejarInicioSesion}>
+                            <div className="form-group">
+                                <label htmlFor="email">Correo</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Tu correo"
+                                    value={Correo}
+                                    onChange={(e) => setCorreo(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="password">Contraseña</label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Tu contraseña"
+                                    value={Contraseña}
+                                    onChange={(e) => setContraseña(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="form-links">
+                                <Link to="#">¿Olvidaste tu Contraseña?</Link>
+                                <Link to="/registrar">¿No tienes cuenta? Regístrate!</Link>
+                            </div>
+                            <button type="submit" className="button">Ingresar</button>
+                        </form>
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="password">Contraseña</label>
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Tu contraseña"
-                            value={Contraseña}
-                            onChange={(e) => setContraseña(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className="form-links">
-                        <Link to="#">¿Olvidaste tu Contraseña?</Link>
-                        <Link to="/registrar">¿No tienes cuenta? Regístrate!</Link>
-                    </div>
-                    <button type="submit" className="button">Ingresar</button>
-                </form>
-            </div>
+                </div>
+            </main>
+            <a href="https://wa.me/3103409688" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+            </a>
+            <Footer /> {/* Pie de página */}
         </div>
     );
 }
